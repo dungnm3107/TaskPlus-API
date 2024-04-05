@@ -7,7 +7,12 @@ const cors= require('cors');
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+    origin: 'https://your-vercel-frontend-domain.com',
+    optionsSuccessStatus: 200 
+  }));
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
