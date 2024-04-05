@@ -9,7 +9,7 @@ const app = express();
 
 // app.use(cors());
 app.use(cors({
-    origin: 'https://task-plus-web.vercel.app/',
+    origin: 'https://task-plus-web.vercel.app',
     optionsSuccessStatus: 200 
   }));
 
