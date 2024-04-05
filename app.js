@@ -9,7 +9,7 @@ const app = express();
 
 // app.use(cors());
 app.use(cors({
-    origin: 'https://your-vercel-frontend-domain.com',
+    origin: 'https://task-plus-web.vercel.app/login',
     optionsSuccessStatus: 200 
   }));
 
