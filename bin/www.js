@@ -10,15 +10,14 @@ const http = require('http');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
-dotenv.config()
+dotenv.config();
+
 
 /**
  * Get port from environment and store in Express.
  */
 
 const port = normalizePort(process.env.PORT || '3000');
-
-
 app.set('port', port);
 
 /**
@@ -39,7 +38,8 @@ mongoose.connect(process.env.MONGODB_URL).then(() => {
 }).catch(err => {
   console.log(err);
   process.exit(1);
-})
+});
+
 
 
 /**
